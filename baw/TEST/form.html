@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div{
+            margin-bottom:10px;
+        }
+    </style>
+    <title>TEST </title>
+</head>
+<body>  
+    <form action="form1">
+
+        <h1 style="text-align: center;">TEST TEXTBOX</h1>
+        <div>
+            <label for="name" >ชื่อ - นามสกุล :</label>
+            <input type="text" required>
+            <!-- คำสั่ง required บังคับป้อนข้อมูลช่องนั้นๆ -->
+        </div>
+        <div>
+            <label for="email">Email : </label>
+            <input type="email">
+        </div>
+        <div>
+            <label for="password">รหัสผ่าน</label>
+            <input type="password" placeholder="A-Z, a-z, 1-0" style="text-align:center;">
+        </div>
+        <div>
+        <label for="text">ที่อยู่</label>
+        <textarea cols="30" rows="2" name="textarea"></textarea>
+        </div>
+        <div>
+        <label for="text">อายุ</label>
+        <input type="number" min="0" max="20" value="0">
+        </div>
+        <div>
+            <label for="วดป">วัน/เดือน/ปีเกิด</label>
+            <input type="date">
+        </div>
+        <div>
+            <label for="tell">เบอร์โทรศัพท์ :</label>
+            <input type="tel" name="tel">
+        </div>
+        <div>
+            <label for="color">สีที่ต้องการ :</label>
+            <input type="color">
+        </div>
+
+        <div>
+            <label for="edu">การศึกษา :</label>
+        <select name="ระดับการศึกษา" id="">
+            <option value="ประถม">ประถม</option>
+            <option value="มัธยม">มัธยม</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="sex">เพศ :</label>
+        <input type="radio" name="gender">ชาย
+        <input type="radio" name="gender">หญิง
+        <input type="radio" name="gender">กำหนดเอง
+    </div> 
+    <div>
+        <label for="chekbox">สิ่งที่ชอบ</label>
+        <input type="checkbox" name="fav">football
+        <input type="checkbox" name="fav">bassketball
+        <input type="checkbox" name="fav">batminton
+        <input type="checkbox" name="fav">boxing
+        <input type="checkbox" name="fav">swimming
+    </div>
+
+    <div>
+        <label for="file">แนบเอกสาร :</label>
+        <input type="file">
+    </div>
+
+    <div>
+        <input type="submit" value="บันทึกข้อมูล">
+        <!-- บันทึกข้อมูลภายในฟอร์มที่ส้รางไว้ -->
+        <input type="reset" name="res" value="Reset">
+        <!-- รีเซ็ทค่าที่ป้อนไว้ให้กลายเป็นช่องว่างทั้งหมด -->
+    </div>
+</form>
+
+</body>
+</html>
